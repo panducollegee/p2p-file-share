@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.dark {
+  background-color: #1a202c;
+  color: #fff;
+}
+
+.dark .input {
+  background-color: #2d3748;
+  color: #fff;
+  border-color: #4a5568;
+}
+
+.dark .btn {
+  background-color: #2d3748;
+  color: #fff;
+}
+
+.dark .btn-primary {
+  background-color: #4299e1;
+}
+
+.dark .btn-secondary {
+  background-color: #718096;
+}
